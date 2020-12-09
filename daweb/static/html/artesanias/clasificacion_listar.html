@@ -1,0 +1,42 @@
+<div class="mx-auto m-3 p-3">
+    <div class="card">
+        <dvi class="card-header bg-success">
+            <h1>Listado de clasificación</h1>
+        </div>
+        <div class="card-body shadow rounded" >
+            <table class="table table-hover table-bordered" >
+                <caption>Pág. 1 </caption>
+                <thead class="thead-light ">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">CLASIFICACION</th>
+                        <th scope="col">DEPENDE DE</th>
+                        <th scope="col" colspan="2">ACCION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--LISTADO_CLASIFICACION-->
+                    <tr>
+                        <td>{id}</td>
+                        <td>{descripcion}</td>
+                        <td>{padre}</td>
+                        <td>
+                            <a href="/artesanias/clasificacion/edit/{id} ">
+                                <img src="/static/img/editar.png" width="48" alt="editar" title="Editar el elemento actual "/>
+                            </a> 
+                        </td>
+                        <td>                              
+                            <a href="/artesanias/clasificacion/delete/{id} "
+                            onclick="return confirm( 'Esta seguro de Borrar {descripcion}') ">
+                                <img src="/static/img/eliminar.png" width="48" alt="eliminar" title="Borrar el elemento actual "/>
+                            </a> 
+                        </td>
+
+
+                    </tr>
+                    <!--LISTADO_CLASIFICACION-->
+                </tbody>
+            </div>
+        </div>
+    </div>
+</div>

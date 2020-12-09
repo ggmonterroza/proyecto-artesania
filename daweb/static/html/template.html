@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Desarrollo de Aplicaciones Web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--seccion jQuery-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src = "https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <link href = "https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+      <!--para bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">   
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+     <!-- fuentes -->
+      <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+     <!-- chosen -->
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.proto.min.js"></script>
+      <link   rel="stylesheet"  href="https://haubek.github.io/dist/css/component-chosen.min.css">
+
+
+
+      <link rel="stylesheet" href="/static/css/estilo.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="row">
+            <div class="col-xs-12 col-sm-2">
+                <img src="/static/img/logo_itvo.png" alt="logo" >
+            </div>
+            <div class="col-xs-12 col-sm-8">
+                <h1>Desarrollo de Aplicaciones Web </h1>
+                <h3> {TITULO}</h3>
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <ul>
+                    <li class="nav-item dropdown list-inline">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            <span class="badge badge-pill badge-success">Ambrosio Cardoso Jiménez</span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Cerrar sesión<a>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-sm-3">
+                Menu-Navegacion
+            </nav>
+            <section class="col-sm-9">
+                {CONTENIDO}
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
+
